@@ -1,0 +1,28 @@
+---
+title: "My Academic Group"
+description: |
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+staff_list <- list(
+    staff_member(
+        id = "joe-bloggs",
+        name = "Joe Bloggs",
+        description = "Joe is a Dr of Blogging.",
+        external_link = FALSE
+    )
+)
+
+publication_list <- list()
+
+project_list <- list()
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+```
+
+## Describe your team
+
+Our team is the best!
