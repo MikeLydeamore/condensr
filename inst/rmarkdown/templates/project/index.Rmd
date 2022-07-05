@@ -18,7 +18,13 @@ staff_list <- list(
 
 publication_list <- list()
 
-project_list <- list()
+project_list <- list(
+    project(
+        id = "joes-model",
+        name = "Joe's Blogging Model",
+        related_staff = "joe-bloggs"
+    )
+)
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
 ```

@@ -1,0 +1,21 @@
+---
+title: "Staff name"
+---
+    
+```{r setup, echo=F}
+staff_member <- staff_list[[1]]
+```
+    
+# About
+
+# Related Projects
+
+```{r list-projects, results = 'asis', echo = FALSE}
+for (project in project_list) {
+    if (staff_member$id %in% project$related_staff) {
+        generate_markdown_for_projects(project)
+    }
+}
+```
+
+# Related publications

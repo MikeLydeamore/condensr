@@ -28,4 +28,14 @@ do_create_website <- function(dir, title) {
             title = title
         )
     )
+
+    render_template(
+        "staff_member.Rmd",
+        template_folder = "project",
+        target_path = dir,
+        output_name = "joe-bloggs.Rmd",
+        data = list(
+            title = title
+        )
+    )
 }

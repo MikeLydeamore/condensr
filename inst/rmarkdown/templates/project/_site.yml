@@ -3,7 +3,6 @@ title: "My awesome team"
 description: |
   My awesome team
 output_dir: "_site"
-theme: theme.css
 navbar:
   left:
     - text: "Home"
