@@ -19,3 +19,11 @@ for (project in project_list) {
 ```
 
 # Related publications
+
+```{r list-publications, results='asis', echo=FALSE}
+for (publication in publication_list) {
+    if (staff_member$id %in% publication$related_staff) {
+        generate_markdown_for_publications(publication)
+    }
+}
+```
