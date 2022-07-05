@@ -12,7 +12,7 @@ staff_list <- list(
         id = "joe-bloggs",
         name = "Joe Bloggs",
         description = "Joe is a Dr of Blogging.",
-        external_link = FALSE
+        external_link = NA
     )
 )
 
