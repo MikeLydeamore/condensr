@@ -55,3 +55,46 @@ test_that("publication structure inputs", {
     )
   })
 })
+
+test_that("staff member inputs", {
+
+  expect_error({
+    staff_member(
+      id = 5,
+      name = "Example Name",
+      description = "Example description for example staff member.",
+      external_link = "http://www.example.com/",
+      internal_link = FALSE
+    )
+  })
+
+  expect_error({
+    staff_member(
+      id = "example-id",
+      name = 5,
+      description = "Example description for example staff member.",
+      external_link = "http://www.example.com/",
+      internal_link = FALSE
+    )
+  })
+
+  expect_error({
+    staff_member(
+      id = "example-id",
+      name = "Example Name",
+      description = 5,
+      external_link = "http://www.example.com/",
+      internal_link = FALSE
+    )
+  })
+
+  expect_silent({
+    staff_member(
+      id = "example-id",
+      name = "Example Name",
+      description = "Example description for example staff member.",
+      external_link = "http://www.example.com/",
+      internal_link = FALSE
+    )
+  })
+})
