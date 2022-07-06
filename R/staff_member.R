@@ -15,6 +15,8 @@
 #' * `external_link`
 #' @examples
 #' # ADD_EXAMPLES_HERE
+#' 
+#' @export
 staff_member <- function(id,
                          name,
                          description,
