@@ -16,6 +16,7 @@
 #'        related_staff = "joe-bloggs"
 #'    )
 #' 
+#' @export
 project <- function(id,
                     name,
                     related_staff,
@@ -26,6 +27,7 @@ project <- function(id,
     assertthat::assert_that(assertthat::is.string(name))
     assertthat::assert_that(is.vector(related_staff))
     assertthat::assert_that(assertthat::is.string(link) | is.na(link))
+    
     proj <- list(
         id = id,
         name = name,

@@ -24,6 +24,7 @@
 #'        date = as.Date("2019-01-01")
 #'    )
 #' 
+#' @export
 publication <- function(title,
                         related_staff,
                         link,
@@ -32,7 +33,7 @@ publication <- function(title,
     
     assertthat::assert_that(assertthat::is.string(title))
     assertthat::assert_that(is.vector(related_staff))
-    assertthat::assert_that(assertthat::is.string(link))
+    assertthat::assert_that(assertthat::is.string(link) | is.na(link))
     assertthat::assert_that(assertthat::is.string(citation))
     assertthat::assert_that(assertthat::is.date(date))
     
