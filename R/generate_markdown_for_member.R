@@ -1,4 +1,9 @@
 generate_markdown_for_member <- function(member) {
+
+    if (!"staff_member" %in% class(member)) {
+        error("Input must have class member.")
+    }
+
     cat(
         "::: col",
         glue::glue("### {member$name}"),
