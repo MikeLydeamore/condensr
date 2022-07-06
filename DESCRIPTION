@@ -13,4 +13,5 @@ Imports:
     distill
 Suggests: 
     testthat (>= 3.0.0)
+    assertthat
 Config/testthat/edition: 3
