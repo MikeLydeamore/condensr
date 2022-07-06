@@ -1,4 +1,3 @@
-
 #' Generate markdown for staff member
 #'
 #' Generates the image, short description and linking-out buttons for use in
@@ -9,7 +8,7 @@
 generate_markdown_for_member <- function(member) {
 
     if (!"staff_member" %in% class(member)) {
-        error("Input must have class member.")
+        stop("Input must have class member.")
     }
 
     cat(
