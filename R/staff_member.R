@@ -1,6 +1,11 @@
 #' Create staff member
 #'
-#' Creates a staff member for use in an academic group website.
+#' Creates a staff member for use in an academic group website. On the list of
+#' all staff members (by default in `staff_list.Rmd`), the `name` and
+#' `description` will be reported. In addition, an image, stored in
+#' `images/staff` with filename `id.png` will be shown.
+#' 
+#' The external link will be the link in the "MORE" button on the rendered website. 
 #'
 #' @param id String defining the unique identifier for a staff member.
 #' @param name Display name of staff member.
