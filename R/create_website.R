@@ -1,4 +1,24 @@
-do_create_website <- function(dir, title) {
+
+#' Create the templates for a condensr website
+#'
+#' Creates the necessary directories, high level files and structures for a
+#' condensr website.
+#' 
+#' Under the hood, this function is creating a distill website (using
+#' `distill:::do_create_website`), and then overwriting some files with
+#' `condensr` specifics. These specific files are:
+#' 
+#' * _site.yml
+#' * index.Rmd
+#' staff_list.Rmd
+#' staff_member.Rmd
+#'
+#' @param dir Target directory for the website.
+#' @param title Title of the website.
+#'
+#' @examples
+#' create_website("test_site", "test_site")
+create_website <- function(dir, title) {
     distill:::do_create_website(dir, title, gh_pages = FALSE, edit = FALSE, "website")
 
     render_template(
