@@ -1,3 +1,16 @@
+
+#' Copy Rmd template to target path
+#'
+#' Copies a file from the `rmarkdown/templates` folder to a target path
+#'
+#' @param file File name to copy.
+#' @param template_folder Folder name of file.
+#' @param target_path Path to copy to.
+#' @param output_name Name of copies file. If `NA`, name will be the same as
+#' input file name.
+#' @param data List of additional metadata. Must have at least element `name`
+#' and `title`.
+#'
 render_template <- function(file, template_folder, target_path, output_name = NA, data = list()) {
     message("Creating ", file.path(target_path, template_folder, file))
     template <- system.file(file.path("rmarkdown", "templates", template_folder, file),
