@@ -1,2 +1,3 @@
 .Rproj.user
 test_site/*
+tests/testthat/test_site/*
