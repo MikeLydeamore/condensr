@@ -21,6 +21,11 @@ jobs:
         with:
           use-public-rspm: true
 
+      - name: Create .Renviron file
+        run: |
+          echo ENVIRONMENT="github_actions" >> ~/.Renviron
+        shell: bash
+
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: any::covr
