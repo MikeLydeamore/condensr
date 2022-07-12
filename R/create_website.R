@@ -3,11 +3,11 @@
 #'
 #' Creates the necessary directories, high level files and structures for a
 #' condensr website.
-#' 
+#'
 #' Under the hood, this function is creating a distill website (using
 #' `distill:::do_create_website`), and then overwriting some files with
 #' `condensr` specifics. These specific files are:
-#' 
+#'
 #' * _site.yml
 #' * index.Rmd
 #' staff_list.Rmd
@@ -17,9 +17,10 @@
 #' @param title Title of the website.
 #'
 #' @examples
-#' create_website("test_site", "test_site")
+#' create_website(dir = tempdir(), "test_site")
+#' @export
 create_website <- function(dir, title) {
-    distill:::do_create_website(dir, title, gh_pages = FALSE, edit = FALSE, "website")
+    distill::create_website(dir, title, gh_pages = FALSE, edit = FALSE)
 
     render_template(
         "_site.yml",
@@ -27,7 +28,7 @@ create_website <- function(dir, title) {
         target_path = dir,
         data = list(
             name = basename(dir),
-            title = title,
+            title = title
         )
     )
 
@@ -58,4 +59,6 @@ create_website <- function(dir, title) {
             title = title
         )
     )
+
+    rmarkdown::render_site(dir)
 }

@@ -3,3 +3,8 @@
 ^condensr\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^\.github$
+^README\.Rmd$
+^condensr.code-workspace$
+^test_site$
+^tests/testthat/test_site$

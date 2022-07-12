@@ -1,9 +1,11 @@
-#' Generate markdown for projects
-#' 
-#' Generate markdown block for `codensr` projects.
-#' 
-#' @param project A `condensr` project object. If a link is available (i.e.
-#' `!is.na(project$link)`), then a hyperlink will be inserted.
+#' Generate markdown for publications
+#'
+#' Generate markdown block for `codensr` publications.
+#'
+#' @param publication A `condensr` publication object. If a link is available (i.e.
+#' `!is.na(publication$link)`), then a hyperlink will be inserted.
+#'
+#' @export
 generate_markdown_for_publications <- function(publication) {
     if (!"publication" %in% class(publication)) {
         stop("Input publication must have class publication")

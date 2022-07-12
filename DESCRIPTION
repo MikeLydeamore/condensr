@@ -8,10 +8,14 @@ Description: A package built on top of distill that generates websites for small
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 Imports:
     distill,
-    assertthat
+    assertthat,
+    fs,
+    glue,
+    whisker,
+    rmarkdown
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

@@ -5,8 +5,8 @@
 #'
 #' @param member An object of class `staff_member`.
 #'
+#' @export
 generate_markdown_for_member <- function(member) {
-
     if (!"staff_member" %in% class(member)) {
         stop("Input must have class member.")
     }
