@@ -6,6 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/MikeLydeamore/condensr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MikeLydeamore/condensr/actions/workflows/R-CMD-check.yaml)
+[![codecov](https://codecov.io/gh/MikeLydeamore/condensr/branch/master/graph/badge.svg?token=A94AISR7LE)](https://codecov.io/gh/MikeLydeamore/condensr)
 <!-- badges: end -->
 
 `condensr` provides an easy to use, fast framework for generating
