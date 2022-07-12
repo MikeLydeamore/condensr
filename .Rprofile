@@ -1,7 +1,7 @@
 source("renv/activate.R")
 Sys.setenv(TERM_PROGRAM = "vscode")
 
-if (Sys.getenv("github_actions")) {
+if (!Sys.getenv("ENVIRONMENT") == "github_actions") {
     source(file.path(
         Sys.getenv(
             if (.Platform$OS.type == "windows") "USERPROFILE" else "HOME"
