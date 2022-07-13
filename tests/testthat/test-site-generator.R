@@ -37,11 +37,10 @@ test_that("staff template appears", {
 
     create_staff_member_page(
         staff_member = example_staff_member,
-        site_dir = test_site_path,
-        staff_subdir = "staff"
+        site_dir = test_site_path
     )
 
-    expect_true(file.exists(file.path(test_site_path, "staff/example-id.Rmd")))
+    expect_true(file.exists(file.path(test_site_path, "/staff_example-id.Rmd")))
 })
 
 test_that("staff inputs are valid", {
