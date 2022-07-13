@@ -17,7 +17,7 @@ generate_markdown_for_publications <- function(publication) {
         )
     } else {
         cat(
-            glue::glue("* [{publication$link}]({publication$citation})")
+            glue::glue("* [{publication$citation}]({publication$link})")
         )
     }
 }
