@@ -20,10 +20,10 @@ generate_markdown_for_member <- function(member) {
         glue::glue("{member$description}"),
         sep = "\n"
     )
-    if (!is.na(member$external_link)) {
+    if (member$internal_link) {
         cat(
             glue::glue(
-                "<a href='{member$id}.html' target = '_blank'>",
+                "<a href='{member$id}.html'>",
                 "<div class='more--button'> More </div>",
                 "</a>"
             ),
