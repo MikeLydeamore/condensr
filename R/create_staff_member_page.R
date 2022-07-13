@@ -15,7 +15,6 @@ create_staff_member_page <- function(staff_member, site_dir) {
     }
 
     assertthat::assert_that(assertthat::is.string(site_dir))
-    assertthat::assert_that(assertthat::is.string(staff_subdir))
 
     render_template(
         "staff_member.Rmd",
