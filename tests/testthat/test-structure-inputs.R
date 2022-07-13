@@ -57,7 +57,6 @@ test_that("publication structure inputs", {
 })
 
 test_that("staff member inputs", {
-
   expect_error({
     staff_member(
       id = 5,
@@ -85,6 +84,16 @@ test_that("staff member inputs", {
       description = 5,
       external_link = "http://www.example.com/",
       internal_link = FALSE
+    )
+  })
+
+  expect_error({
+    staff_member(
+      id = "example-id",
+      name = "Example Name",
+      description = "Example description",
+      external_link = "http://www.example.com/",
+      internal_link = "http://www.example.com"
     )
   })
 
