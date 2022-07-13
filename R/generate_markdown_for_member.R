@@ -23,7 +23,7 @@ generate_markdown_for_member <- function(member) {
     if (member$internal_link) {
         cat(
             glue::glue(
-                "<a href='staff/{member$id}.html'>",
+                "<a href='staff_{member$id}.html'>",
                 "<div class='more--button'> More </div>",
                 "</a>"
             ),

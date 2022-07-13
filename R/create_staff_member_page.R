@@ -9,7 +9,7 @@
 #' @param staff_subdir Subdirectory that stores the staff pages. Default `"staff"`.
 #'
 #' @export
-create_staff_member_page <- function(staff_member, site_dir, staff_subdir = "staff") {
+create_staff_member_page <- function(staff_member, site_dir) {
     if (!"staff_member" %in% class(staff_member)) {
         stop("Input staff_member must be of class staff_member")
     }
@@ -20,8 +20,8 @@ create_staff_member_page <- function(staff_member, site_dir, staff_subdir = "sta
     render_template(
         "staff_member.Rmd",
         template_folder = "project",
-        target_path = file.path(site_dir, staff_subdir),
-        output_name = paste0(staff_member$id, ".Rmd"),
+        target_path = site_dir,
+        output_name = paste0("staff_", staff_member$id, ".Rmd"),
         data = list(
             name = basename(site_dir),
             title = staff_member$id
