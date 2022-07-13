@@ -22,6 +22,9 @@
 create_website <- function(dir, title) {
     distill::create_website(dir, title, gh_pages = FALSE, edit = FALSE)
 
+    # Create subdirectory for staff pages to be stored
+    dir.create(file.path(dir, "staff"))
+
     render_template(
         "_site.yml",
         template_folder = "project",
