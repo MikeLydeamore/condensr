@@ -4,15 +4,13 @@
 \alias{create_staff_member_page}
 \title{Create a markdown template for a specific staff member}
 \usage{
-create_staff_member_page(staff_member, site_dir, staff_subdir = "staff")
+create_staff_member_page(staff_member, site_dir)
 }
 \arguments{
 \item{staff_member}{An object of class \code{staff_member} that will be used to
 generate the template.}
 
 \item{site_dir}{Directory of the website.}
-
-\item{staff_subdir}{Subdirectory that stores the staff pages. Default \code{"staff"}.}
 }
 \description{
 Creates a template markdown file for a given input staff member.

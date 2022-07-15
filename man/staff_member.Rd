@@ -15,7 +15,7 @@ staff_member(id, name, description, external_link, internal_link = FALSE)
 
 \item{external_link}{Link to an external website.}
 
-\item{internal_link}{Should an internal link be used? Not currently implemented.}
+\item{internal_link}{Should an internal link be used? TRUE/FALSE}
 }
 \value{
 An object of class \code{staff_member} with the following elements:

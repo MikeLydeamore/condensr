@@ -45,10 +45,12 @@ test_that("staff markdown generates", {
     expect_error(generate_markdown_for_member(list("test-input")))
 
     expect_output(generate_markdown_for_member(example_staff_member))
+
+    example_staff_member[["internal_link"]] <- TRUE
+    expect_output(generate_markdown_for_member(example_staff_member))
 })
 
 test_that("publication markdown generates", {
-
     example_publication <- publication(
         title = "example-title",
         related_staff = c("joe-bloggs"),

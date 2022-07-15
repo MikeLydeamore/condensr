@@ -6,7 +6,6 @@
 #' @param staff_member An object of class `staff_member` that will be used to
 #' generate the template.
 #' @param site_dir Directory of the website.
-#' @param staff_subdir Subdirectory that stores the staff pages. Default `"staff"`.
 #'
 #' @export
 create_staff_member_page <- function(staff_member, site_dir) {
