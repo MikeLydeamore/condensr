@@ -1,5 +1,13 @@
 ---
 title: "Staff name"
+image: "images/staff/staff-id.png"
+params:
+    staff_member: !r staff_list[['staff-id']]
+links:
+    - label: External Link
+      url: "`r staff_list[['staff-id']]$external_link`"
+output:
+    postcard::trestles
 ---
     
 ```{r setup, echo=F}
