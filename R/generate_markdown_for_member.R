@@ -12,28 +12,28 @@ generate_markdown_for_member <- function(member) {
     }
 
     cat(
-        "::: col",
+        "<div class='col'>",
+        ifelse(
+            member$internal_link,
+            "<a href='staff_{member$id}.html'>",
+            ""
+        )
         glue::glue("### {member$name}"),
         "",
         glue::glue("![](images/staff/{member$id}.png)"),
         "",
         glue::glue("{member$description}"),
+        ifelse(
+            member$internal_link,
+            "</a>",
+            ""
+        )
         sep = "\n"
     )
-    if (member$internal_link) {
-        cat(
-            glue::glue(
-                "<a href='staff_{member$id}.html'>",
-                "<div class='more--button'> More </div>",
-                "</a>"
-            ),
-            sep = "\n"
-        )
-    }
-
+    
     cat(
         "",
-        ":::",
+        "</div>",
         "",
         sep = "\n"
     )
