@@ -15,7 +15,8 @@ Imports:
     fs,
     glue,
     whisker,
-    rmarkdown
+    rmarkdown,
+    postcards
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
