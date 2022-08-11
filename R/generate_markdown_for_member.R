@@ -17,7 +17,7 @@ generate_markdown_for_member <- function(member) {
             member$internal_link,
             "<a href='staff_{member$id}.html'>",
             ""
-        )
+        ),
         glue::glue("### {member$name}"),
         "",
         glue::glue("![](images/staff/{member$id}.png)"),
@@ -27,10 +27,10 @@ generate_markdown_for_member <- function(member) {
             member$internal_link,
             "</a>",
             ""
-        )
+        ),
         sep = "\n"
     )
-    
+
     cat(
         "",
         "</div>",

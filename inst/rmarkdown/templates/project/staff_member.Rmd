@@ -7,7 +7,7 @@ links:
     - label: External Link
       url: "`r staff_list[['staff-id']]$external_link`"
 output:
-    postcard::trestles
+    postcards::trestles
 ---
     
 ```{r setup, echo=F}
