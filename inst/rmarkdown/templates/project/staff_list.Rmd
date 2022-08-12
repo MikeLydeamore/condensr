@@ -34,8 +34,12 @@ title: "Investigators"
     border-spacing: 20px;
     border-color: #cbd1cc;
     border-width: thin;
+    transition: background-color: .5s;
 }
 
+.col:hover {
+    background-color: #dcdcdc;
+}
 .more--button {
     color: #3a3a3a;
     border-color: #3a3a3a;
