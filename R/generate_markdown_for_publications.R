@@ -13,11 +13,11 @@ generate_markdown_for_publications <- function(publication) {
 
     if (is.na(publication$link)) {
         cat(
-            glue::glue("* {publication$citation}")
+            glue::glue("* {publication$citation}\n")
         )
     } else {
         cat(
-            glue::glue("* [{publication$citation}]({publication$link})")
+            glue::glue("* [{publication$citation}]({publication$link})\n")
         )
     }
 }
