@@ -23,7 +23,11 @@ generate_markdown_for_member <- function(member, extension = "png") {
         "",
         glue::glue("### {member$name}"),
         "",
-        glue::glue("{member$description}"),
+        ifelse(
+            !is.na(member$description)
+            glue::glue("{member$description}"),
+            ""
+        )
         sep = "\n"
     )
 
