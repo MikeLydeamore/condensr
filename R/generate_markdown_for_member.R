@@ -17,9 +17,10 @@ generate_markdown_for_member <- function(member) {
             glue::glue("<div class='col' onclick=\"location.href='staff_{member$id}.html';\" style='cursor: pointer;'>"),
             "<div class='col'>"
         ),
-        glue::glue("### {member$name}"),
         "",
         glue::glue("![](images/staff/{member$id}.png)"),
+        "",
+        glue::glue("### {member$name}"),
         "",
         glue::glue("{member$description}"),
         sep = "\n"
