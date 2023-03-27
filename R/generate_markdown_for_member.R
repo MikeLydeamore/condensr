@@ -4,9 +4,10 @@
 #' a list of staff belonging to a group.
 #'
 #' @param member An object of class `staff_member`.
+#' @param extension Extension of the image file. Don't include the .
 #'
 #' @export
-generate_markdown_for_member <- function(member) {
+generate_markdown_for_member <- function(member, extension = "png") {
     if (!"staff_member" %in% class(member)) {
         stop("Input must have class member.")
     }
@@ -18,7 +19,7 @@ generate_markdown_for_member <- function(member) {
             "<div class='col'>"
         ),
         "",
-        glue::glue("![](images/staff/{member$id}.png)"),
+        glue::glue("![](images/staff/{member$id}.{extension})"),
         "",
         glue::glue("### {member$name}"),
         "",
