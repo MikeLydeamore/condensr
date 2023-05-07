@@ -17,7 +17,7 @@ generate_markdown_for_projects <- function(project) {
         )
     } else {
         cat(
-            glue::glue("* [{project$link}]({project$name})")
+            glue::glue("* [{project$name}]({project$link})")
         )
     }
 }
