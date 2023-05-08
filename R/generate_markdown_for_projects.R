@@ -13,11 +13,13 @@ generate_markdown_for_projects <- function(project) {
 
     if (is.na(project$link)) {
         cat(
-            glue::glue("* {project$name}")
+            glue::glue("* {project$name}"),
+            sep = "\n"
         )
     } else {
         cat(
-            glue::glue("* [{project$name}]({project$link})")
+            glue::glue("* [{project$name}]({project$link})"),
+            sep = "\n"
         )
     }
 }
