@@ -19,7 +19,7 @@ generate_markdown_for_member <- function(member, extension = "png") {
             "<div class='col'>"
         ),
         "",
-        glue::glue("<div class='personimg'> ![](images/staff/{{member$id}}.{{extension}}){fig.alt='{{member$name}}'} </div>", .open = "{{"),
+        glue::glue("<div class='personimg'> ![](images/staff/{{member$id}}.{{extension}}){fig.alt='{{member$name}}'} </div>", .open = "{{", .close = "}}"),
         "",
         glue::glue("### {member$name}"),
         "",
