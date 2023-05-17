@@ -4,7 +4,13 @@
 			"path": "."
 		},
 		{
-			"path": "../SPECTRUMSPARKWebsite"
+			"path": "../website-spectrum"
+		},
+		{
+			"path": "../website-spark"
+		},
+		{
+			"path": "../website-impakt"
 		}
 	],
 	"settings": {}
