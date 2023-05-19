@@ -26,7 +26,7 @@ staff_member <- function(id,
                          description,
                          external_link,
                          internal_link = FALSE,
-                         email) {
+                         email = NA) {
     assertthat::assert_that(assertthat::is.string(id))
     assertthat::assert_that(assertthat::is.string(name))
     assertthat::assert_that(assertthat::is.string(description))
@@ -40,7 +40,7 @@ staff_member <- function(id,
         name = name,
         description = description,
         external_link = external_link,
-        internal_link = internal_link
+        internal_link = internal_link,
         email = email
     )
 

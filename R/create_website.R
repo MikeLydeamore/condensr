@@ -1,4 +1,3 @@
-
 #' Create the templates for a condensr website
 #'
 #' Creates the necessary directories, high level files and structures for a
@@ -20,48 +19,33 @@
 #' create_website(dir = tempdir(), "test_site")
 #' @export
 create_website <- function(dir, title) {
-    distill::create_website(dir, title, gh_pages = FALSE, edit = FALSE)
+    dir.create(file.path(dir))
 
     # Create subdirectory for staff pages to be stored
     dir.create(file.path(dir, "staff"))
 
     render_template(
-        "_site.yml",
+        "_quarto.yml",
         template_folder = "project",
-        target_path = dir,
-        data = list(
-            name = basename(dir),
-            title = title
-        )
+        target_path = dir
     )
 
     render_template(
-        "index.Rmd",
+        "index.qmd",
         template_folder = "project",
-        target_path = dir,
-        data = list(
-            title = title
-        )
+        target_path = dir
     )
 
     render_template(
-        "staff_list.Rmd",
+        "people.qmd",
         template_folder = "project",
-        target_path = dir,
-        data = list(
-            title = title
-        )
+        target_path = dir
     )
 
     render_template(
-        "staff_member.Rmd",
+        "staff_member.qmd",
         template_folder = "project",
         target_path = dir,
-        output_name = "joe-bloggs.Rmd",
-        data = list(
-            title = title
-        )
+        output_name = "joe-bloggs.qmd",
     )
-
-    rmarkdown::render_site(dir)
 }
