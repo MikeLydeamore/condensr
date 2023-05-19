@@ -1,4 +1,3 @@
-
 #' Sort a list by the list element `date`.
 #'
 #' Sorts a list for the column `date`.
@@ -6,6 +5,7 @@
 #' @param list_to_sort List to sort. Each element of the list must have column `date`.
 #'
 #' @return The sorted list.
+#' @export
 sort_list_by_date <- function(list_to_sort) {
     sorting_column <- lapply(list_to_sort, function(a) {
         if (!"date" %in% names(a)) {
@@ -19,5 +19,5 @@ sort_list_by_date <- function(list_to_sort) {
 
     sorted_list <- list_to_sort[orders]
 
-    return (sorted_list)
+    return(sorted_list)
 }
