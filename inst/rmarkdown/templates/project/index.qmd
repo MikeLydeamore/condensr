@@ -1,10 +1,14 @@
 ---
 title: "My Academic Group"
-description: |
-site: distill::distill_website
+toc: false
+format:
+    html:
+        page-layout: full
+description: "A homepage for my new academic collaboration"
 ---
 
-```{r setup, include=FALSE}
+```{r setup}
+#| include: false
 knitr::opts_chunk$set(echo = FALSE)
 
 staff_list <- list(
@@ -36,8 +40,6 @@ project_list <- list(
         related_staff = "joe-bloggs"
     )
 )
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
 ```
 
 ## Describe your team
