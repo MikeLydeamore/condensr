@@ -25,12 +25,14 @@ staff_member <- function(id,
                          name,
                          description,
                          external_link,
-                         internal_link = FALSE) {
+                         internal_link = FALSE,
+                         email) {
     assertthat::assert_that(assertthat::is.string(id))
     assertthat::assert_that(assertthat::is.string(name))
     assertthat::assert_that(assertthat::is.string(description))
     assertthat::assert_that(assertthat::is.string(external_link) | is.na(external_link))
     assertthat::assert_that(is.logical(internal_link))
+    assertthat::assert_that(assertthat::is.string(email) | is.na(email))
 
 
     member <- list(
@@ -39,6 +41,7 @@ staff_member <- function(id,
         description = description,
         external_link = external_link,
         internal_link = internal_link
+        email = email
     )
 
     class(member) <- append(class(member), "staff_member")
