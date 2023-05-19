@@ -1,7 +1,6 @@
-
-#' Create a markdown template for a specific staff member
+#' Create a quarto file for a specific staff member
 #'
-#' Creates a template markdown file for a given input staff member.
+#' Creates a quarto file for a given input staff member.
 #'
 #' @param staff_member An object of class `staff_member` that will be used to
 #' generate the template.
@@ -15,15 +14,21 @@ create_staff_member_page <- function(staff_member, site_dir) {
 
     assertthat::assert_that(assertthat::is.string(site_dir))
 
+    data <- list(
+        INPUT_STAFF_ID = staff_member[["id"]],
+        INPUT_STAFF_NAME = staff_member[["name"]],
+        INPUT_EMAIL = staff_member[["email"]]
+    )
+    if (!is.null(staff_member[["external_link"]])) {
+        data[["INPUT_EXTERNAL_LINK"]] <- staff_member[["external_link"]]
+    }
+
     render_template(
         "staff_member.Rmd",
         template_folder = "project",
         target_path = site_dir,
         output_name = paste0("staff_", staff_member$id, ".Rmd"),
-        data = list(
-            name = basename(site_dir),
-            title = staff_member$id
-        )
+        data = data
     )
 
     return(invisible(NULL))

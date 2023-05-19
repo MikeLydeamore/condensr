@@ -1,8 +1,8 @@
 ---
 params:
-    staff_id: "INPUT_STAFF_ID"
-title: "STAFF_NAME"
-image: "images/staff/INPUT_STAFF_ID.jpg"
+    staff_id: "{{INPUT_STAFF_ID}}"
+title: "{{STAFF_NAME}}"
+image: "images/staff/{{INPUT_STAFF_ID}}.jpg"
 format:
   html:
     page-layout: full
@@ -14,10 +14,10 @@ about:
     links:
       - icon: envelope
         text: "Email"
-        href: "mailto:INPUT_EMAIL"
+        href: "mailto:{{INPUT_EMAIL}}"
       - icon: globe
         text: "More"
-        href: "INPUT_EXTERNAL_LINK"
+        href: "{{INPUT_EXTERNAL_LINK}}"
 ---
    
 ```{r setup}

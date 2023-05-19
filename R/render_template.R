@@ -1,4 +1,3 @@
-
 #' Copy Rmd template to target path
 #'
 #' Copies a file from the `rmarkdown/templates` folder to a target path
@@ -17,7 +16,7 @@ render_template <- function(file, template_folder, target_path, output_name = NA
     }
 
     message("Creating ", file.path(target_path, template_folder, output_name))
-    template <- system.file(file.path("rmarkdown", "templates", template_folder, file),
+    template <- system.file(file.path("quarto", "templates", template_folder, file),
         package = "condensr"
     )
     template <- paste(readLines(template, encoding = "UTF-8"), collapse = "\n")
