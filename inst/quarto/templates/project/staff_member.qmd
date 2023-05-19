@@ -24,6 +24,8 @@ about:
 #| echo: false
 #| warning: false
 #| message: false
+
+source("../staff_list.R")
 ```
 ::: {#about-block}
 

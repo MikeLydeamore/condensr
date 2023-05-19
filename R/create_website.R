@@ -31,6 +31,12 @@ create_website <- function(dir, title) {
     )
 
     render_template(
+        "staff_list.R",
+        template_folder = "project",
+        target_path = dir
+    )
+
+    render_template(
         "index.qmd",
         template_folder = "project",
         target_path = dir
@@ -42,10 +48,13 @@ create_website <- function(dir, title) {
         target_path = dir
     )
 
-    render_template(
-        "staff_member.qmd",
-        template_folder = "project",
-        target_path = dir,
-        output_name = "joe-bloggs.qmd",
+    create_staff_member_page(
+        staff_member = staff_member(
+            id = "joe-bloggs",
+            name = "Joe Bloggs",
+            description = "Joe is a Dr of Blogging.",
+            external_link = "https://www.example.com/"
+        ),
+        site_dir = dir
     )
 }

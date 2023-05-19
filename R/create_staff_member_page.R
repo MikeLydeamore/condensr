@@ -7,7 +7,7 @@
 #' @param site_dir Directory of the website.
 #'
 #' @export
-create_staff_member_page <- function(staff_member, site_dir) {
+create_staff_member_page <- function(staff_member, site_dir, staff_folder = "staff") {
     if (!"staff_member" %in% class(staff_member)) {
         stop("Input staff_member must be of class staff_member")
     }
@@ -24,10 +24,10 @@ create_staff_member_page <- function(staff_member, site_dir) {
     }
 
     render_template(
-        "staff_member.Rmd",
+        "staff_member.qmd",
         template_folder = "project",
-        target_path = site_dir,
-        output_name = paste0("staff_", staff_member$id, ".Rmd"),
+        target_path = file.path(site_dir, staff_folder),
+        output_name = paste0(staff_member$id, ".qmd"),
         data = data
     )
 

@@ -54,6 +54,7 @@ h3 {
 #| message: false
 #| include: false
 knitr::opts_chunk$set(echo = FALSE)
+source("staff_list.R")
 ```
 
 ## Investigators
