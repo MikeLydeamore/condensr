@@ -2,7 +2,7 @@
 % Please edit documentation in R/create_staff_member_page.R
 \name{create_staff_member_page}
 \alias{create_staff_member_page}
-\title{Create a markdown template for a specific staff member}
+\title{Create a quarto file for a specific staff member}
 \usage{
 create_staff_member_page(staff_member, site_dir)
 }
@@ -13,5 +13,5 @@ generate the template.}
 \item{site_dir}{Directory of the website.}
 }
 \description{
-Creates a template markdown file for a given input staff member.
+Creates a quarto file for a given input staff member.
 }

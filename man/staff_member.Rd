@@ -4,7 +4,14 @@
 \alias{staff_member}
 \title{Create staff member}
 \usage{
-staff_member(id, name, description, external_link, internal_link = FALSE)
+staff_member(
+  id,
+  name,
+  description,
+  external_link,
+  internal_link = FALSE,
+  email = NA
+)
 }
 \arguments{
 \item{id}{String defining the unique identifier for a staff member.}

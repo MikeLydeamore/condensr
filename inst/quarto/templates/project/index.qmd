@@ -9,6 +9,8 @@ description: "A homepage for my new academic collaboration"
 
 ```{r setup}
 #| include: false
+
+library(condensr)
 knitr::opts_chunk$set(echo = FALSE)
 
 staff_list <- list(

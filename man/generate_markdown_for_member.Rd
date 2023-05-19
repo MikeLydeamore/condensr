@@ -4,10 +4,12 @@
 \alias{generate_markdown_for_member}
 \title{Generate markdown for staff member}
 \usage{
-generate_markdown_for_member(member)
+generate_markdown_for_member(member, extension = "png")
 }
 \arguments{
 \item{member}{An object of class \code{staff_member}.}
+
+\item{extension}{Extension of the image file. Don't include the .}
 }
 \description{
 Generates the image, short description and linking-out buttons for use in
