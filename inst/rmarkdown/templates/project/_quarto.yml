@@ -1,0 +1,18 @@
+project:
+  type: website
+  output-dir: _site
+  
+website:
+  title: |
+    My Awesome Team
+  navbar:
+    right:
+      - text: "Home"
+        href: index.html
+      - text: "People"
+        href: people.html
+
+format:
+  html:
+    toc: true
+    mainfont: 'sans-serif'
