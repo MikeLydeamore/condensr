@@ -26,8 +26,8 @@ create_staff_member_page <- function(staff_member, site_dir, staff_folder = "sta
     render_template(
         "staff_member.qmd",
         template_folder = "project",
-        target_path = file.path(site_dir, staff_folder),
-        output_name = paste0(staff_member$id, ".qmd"),
+        target_path = file.path(site_dir, staff_folder, staff_member$id),
+        output_name = "index.qmd",
         data = data
     )
 
