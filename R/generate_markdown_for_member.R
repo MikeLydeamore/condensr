@@ -15,7 +15,7 @@ generate_markdown_for_member <- function(member, extension = "png") {
     cat(
         ifelse(
             member$internal_link,
-            glue::glue("<div class='col' onclick=\"location.href='{member$id}/index.html';\" style='cursor: pointer;'>"),
+            glue::glue("<div class='col' onclick=\"location.href='{member$id}/';\" style='cursor: pointer;'>"),
             glue::glue("<div class='col' onclick=\"location.href='{member$external_link}';\" style='cursor: pointer;'>")
         ),
         "",
