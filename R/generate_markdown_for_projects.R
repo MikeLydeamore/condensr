@@ -4,6 +4,7 @@
 #'
 #' @param project A `condensr` project object. If a link is available (i.e.
 #' `!is.na(project$link)`), then a hyperlink will be inserted.
+#' @return NULL
 #'
 #' @export
 generate_markdown_for_projects <- function(project) {
@@ -22,4 +23,6 @@ generate_markdown_for_projects <- function(project) {
             sep = "\n"
         )
     }
+
+    return (invisible(NULL))
 }

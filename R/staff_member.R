@@ -19,8 +19,16 @@
 #' * `name`
 #' * `description`
 #' * `external_link`
+#' * `internal_link`
+#' * `email`
 #' @examples
-#' # ADD_EXAMPLES_HERE
+#' example_staff_member <- staff_member(
+#'      id = "example-id",
+#'      name = "Example Name",
+#'      description = "Example description for example staff member.",
+#'      external_link = "http://www.example.com/",
+#'      internal_link = FALSE
+#'  )
 #' @export
 staff_member <- function(id,
                          name,

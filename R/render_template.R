@@ -9,6 +9,7 @@
 #' input file name.
 #' @param data List of additional metadata. Must have at least element `name`
 #' and `title`.
+#' @return NULL
 #'
 render_template <- function(file, template_folder, target_path, output_name = NA, data = list()) {
     if (is.na(output_name)) {
@@ -27,4 +28,6 @@ render_template <- function(file, template_folder, target_path, output_name = NA
 
 
     writeLines(output, file.path(target_path, output_name), useBytes = TRUE)
+
+    return(invisible(NULL))
 }

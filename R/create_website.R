@@ -14,6 +14,7 @@
 #'
 #' @param dir Target directory for the website.
 #' @param title Title of the website.
+#' @return NULL
 #'
 #' @examples
 #' create_website(dir = tempdir(), "test_site")
@@ -58,4 +59,6 @@ create_website <- function(dir, title) {
         ),
         site_dir = dir
     )
+
+    return (invisible(NULL))
 }

@@ -4,6 +4,7 @@
 #'
 #' @param publication A `condensr` publication object. If a link is available (i.e.
 #' `!is.na(publication$link)`), then a hyperlink will be inserted.
+#' @return NULL
 #'
 #' @export
 generate_markdown_for_publications <- function(publication) {
@@ -22,4 +23,6 @@ generate_markdown_for_publications <- function(publication) {
             sep = "\n"
         )
     }
+
+    return(invisible(NULL))
 }

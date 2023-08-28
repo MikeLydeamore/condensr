@@ -5,6 +5,7 @@
 #'
 #' @param member An object of class `staff_member`.
 #' @param extension Extension of the image file. Don't include the .
+#' @return NULL
 #'
 #' @export
 generate_markdown_for_member <- function(member, extension = "png") {
@@ -37,4 +38,6 @@ generate_markdown_for_member <- function(member, extension = "png") {
         "",
         sep = "\n"
     )
+
+    return(invisible(NULL))
 }
