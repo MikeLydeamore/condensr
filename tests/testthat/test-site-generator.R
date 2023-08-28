@@ -40,7 +40,7 @@ test_that("staff template appears", {
         site_dir = test_site_path
     )
 
-    expect_true(file.exists(file.path(test_site_path, "/staff_example-id.Rmd")))
+    expect_true(file.exists(file.path(test_site_path, "staff//example-id/index.qmd")))
 })
 
 test_that("staff inputs are valid", {

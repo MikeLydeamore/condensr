@@ -4,7 +4,7 @@
 \alias{create_staff_member_page}
 \title{Create a quarto file for a specific staff member}
 \usage{
-create_staff_member_page(staff_member, site_dir)
+create_staff_member_page(staff_member, site_dir, staff_folder = "staff")
 }
 \arguments{
 \item{staff_member}{An object of class \code{staff_member} that will be used to

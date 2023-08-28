@@ -15,7 +15,7 @@ render_template <- function(file, template_folder, target_path, output_name = NA
         output_name <- file
     }
 
-    message("Creating ", file.path(target_path2, output_name))
+    message("Creating ", file.path(target_path, output_name))
     template <- system.file(file.path("quarto", "templates", template_folder, file),
         package = "condensr"
     )
