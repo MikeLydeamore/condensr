@@ -3,7 +3,7 @@ Title: Academic Group Website Generator
 Version: 0.0.1
 Authors@R: 
     person("Michael", "Lydeamore", , "michael.lydeamore@monash.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0000-0001-6515-827X"))
 Description: A package built on top of distill that generates websites for small academic groups.
 License: MIT + file LICENSE
 Encoding: UTF-8
