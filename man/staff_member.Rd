@@ -23,6 +23,8 @@ staff_member(
 \item{external_link}{Link to an external website.}
 
 \item{internal_link}{Should an internal link be used? TRUE/FALSE}
+
+\item{email}{email address for the staff member. Used to pre-fill the templates.}
 }
 \value{
 An object of class \code{staff_member} with the following elements:

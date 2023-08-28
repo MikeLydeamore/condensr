@@ -5,6 +5,9 @@
 #' @param staff_member An object of class `staff_member` that will be used to
 #' generate the template.
 #' @param site_dir Directory of the website.
+#' @param staff_folder Subfolder in which the staff qmd files are stored.
+#' Default "staff". Note that each template will be `index.qmd` to facilitate
+#' pretty link formatting in-browser.
 #'
 #' @export
 create_staff_member_page <- function(staff_member, site_dir, staff_folder = "staff") {

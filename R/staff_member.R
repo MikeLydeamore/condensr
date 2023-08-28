@@ -12,6 +12,7 @@
 #' @param description Short description, used on staff pages.
 #' @param external_link Link to an external website.
 #' @param internal_link Should an internal link be used? TRUE/FALSE
+#' @param email email address for the staff member. Used to pre-fill the templates.
 #'
 #' @return An object of class `staff_member` with the following elements:
 #' * `id`
