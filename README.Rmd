@@ -49,7 +49,7 @@ The `about.qmd` page includes the high level information. Most of the group info
 To build the website, simply run:
 
 ```{r build, eval=F}
-rmarkdown::render_site("site_dir")
+quarto::render("site_dir")
 ```
 
 You can host the page just like you would any other `quarto` site: GitHub Pages, Netlify, or any other HTML hosting site of your choosing.
