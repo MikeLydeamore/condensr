@@ -8,3 +8,6 @@
 ^condensr.code-workspace$
 ^test_site$
 ^tests/testthat/test_site$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

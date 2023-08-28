@@ -14,11 +14,10 @@ academic “group” websites. Often, consortiums of researchers are wanting
 a web presence that groups staff to projects and publications, but
 managing such a website can be an expensive endeavour.
 
-Fundamentally, `condensr` is a bunch of
-[`distill`](https://rstudio.github.io/distill/) templates, combined with
-some convenience functions to generate markdown automatically. Staff are
-linked to projects, and to publications, and websites for each are
-generated automatically.
+Fundamentally, `condensr` is a bunch of [`quarto`](https://quarto.org/)
+templates, combined with some convenience functions to generate markdown
+automatically. Staff are linked to projects, and to publications, and
+websites for each are generated automatically.
 
 ## Installation
 
@@ -41,7 +40,7 @@ create_website(dir = "site_dir", name = "site_name")
 
 and a new website will be generated with the files you need.
 
-The `about.Rmd` page includes the high level information. Most of the
+The `about.qmd` page includes the high level information. Most of the
 group information belongs in `index.Rmd` where the three structures
 expected by `condensr` are built.
 
@@ -51,5 +50,5 @@ To build the website, simply run:
 rmarkdown::render_site("site_dir")
 ```
 
-You can host the page just like you would any other `distill` site:
+You can host the page just like you would any other `quarto` site:
 GitHub Pages, Netlify, or any other HTML hosting site of your choosing.

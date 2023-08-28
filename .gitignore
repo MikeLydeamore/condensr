@@ -3,3 +3,4 @@ test_site/*
 tests/testthat/test_site/*
 .DS_Store
 condensr.code-workspace
+docs
