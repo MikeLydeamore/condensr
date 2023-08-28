@@ -45,7 +45,8 @@ create_website <- function(dir, title) {
     render_template(
         "people.qmd",
         template_folder = "project",
-        target_path = dir
+        target_path = file.path(dir, "people"),
+        output_name = "index.qmd"
     )
 
     create_staff_member_page(
