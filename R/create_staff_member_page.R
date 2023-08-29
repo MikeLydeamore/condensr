@@ -9,6 +9,16 @@
 #' Default "staff". Note that each template will be `index.qmd` to facilitate
 #' pretty link formatting in-browser.
 #' @return NULL
+#' 
+#' @examples
+#' example_staff_member <- staff_member(
+#'     id = "example-id",
+#'     name = "Example Name",
+#'     description = "Example description for example staff member.",
+#'     external_link = "http://www.example.com/",
+#'     internal_link = FALSE
+#' )
+#' create_staff_member_page(example_staff_member, temp_dir())
 #'
 #' @export
 create_staff_member_page <- function(staff_member, site_dir, staff_folder = "staff") {

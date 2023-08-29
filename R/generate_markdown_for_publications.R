@@ -5,6 +5,17 @@
 #' @param publication A `condensr` publication object. If a link is available (i.e.
 #' `!is.na(publication$link)`), then a hyperlink will be inserted.
 #' @return NULL
+#' 
+#' @examples
+#' example_publication <- publication(
+#'     title = "Joe's Blogging Paper",
+#'     related_staff = c("joe-bloggs"),
+#'     link = NA,
+#'     citation = "Bloggs, J., Bloggy, Y. (2019),
+#'          The power of blogging, Australian Journal of Bloggs, 43: 149-155.",
+#'     date = as.Date("2019-01-01")
+#' )
+#' generate_markdown_for_publications(publication)
 #'
 #' @export
 generate_markdown_for_publications <- function(publication) {

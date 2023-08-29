@@ -5,6 +5,15 @@
 #' @param project A `condensr` project object. If a link is available (i.e.
 #' `!is.na(project$link)`), then a hyperlink will be inserted.
 #' @return NULL
+#' 
+#' @examples 
+#' 
+#' example_project <- project(
+#'        id = "joes-model",
+#'        name = "Joe's Blogging Model",
+#'        related_staff = "joe-bloggs"
+#'    )
+#' generate_markdown_for_projects(example_project)
 #'
 #' @export
 generate_markdown_for_projects <- function(project) {
