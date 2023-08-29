@@ -15,7 +15,7 @@
 #'          The power of blogging, Australian Journal of Bloggs, 43: 149-155.",
 #'     date = as.Date("2019-01-01")
 #' )
-#' generate_markdown_for_publications(publication)
+#' generate_markdown_for_publications(example_publication)
 #'
 #' @export
 generate_markdown_for_publications <- function(publication) {
