@@ -4,7 +4,11 @@ Version: 1.0.0
 Authors@R: 
     person("Michael", "Lydeamore", , "michael.lydeamore@monash.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-6515-827X"))
-Description: Helps automate Quarto website creation for small academic groups.
+Description: Helps automate 'Quarto' website creation for small academic groups.
+    Builds a database-like structure of people, projects and publications, linking
+    them together with a string-based ID system. Then, provides functions to automate
+    production of clean markdown for these structures, and in-built CSS formatting
+    using CSS flexbox.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
