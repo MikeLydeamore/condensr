@@ -15,3 +15,14 @@ generate_markdown_for_member(member, extension = "png")
 Generates the image, short description and linking-out buttons for use in
 a list of staff belonging to a group.
 }
+\examples{
+example_staff_member <- staff_member(
+    id = "example-id",
+    name = "Example Name",
+    description = "Example description for example staff member.",
+    external_link = "http://www.example.com/",
+    internal_link = FALSE
+)
+generate_markdown_for_member(example_staff_member)
+
+}

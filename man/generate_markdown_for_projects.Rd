@@ -13,3 +13,13 @@ generate_markdown_for_projects(project)
 \description{
 Generate markdown block for \code{codensr} projects.
 }
+\examples{
+
+example_project <- project(
+       id = "joes-model",
+       name = "Joe's Blogging Model",
+       related_staff = "joe-bloggs"
+   )
+generate_markdown_for_projects(example_project)
+
+}

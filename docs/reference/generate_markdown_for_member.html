@@ -59,6 +59,29 @@ a list of staff belonging to a group.</p>
 
 </dl></div>
 
+    <div class="section level2">
+    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">example_staff_member</span> <span class="op">&lt;-</span> <span class="fu"><a href="staff_member.html">staff_member</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span>    id <span class="op">=</span> <span class="st">"example-id"</span>,</span></span>
+<span class="r-in"><span>    name <span class="op">=</span> <span class="st">"Example Name"</span>,</span></span>
+<span class="r-in"><span>    description <span class="op">=</span> <span class="st">"Example description for example staff member."</span>,</span></span>
+<span class="r-in"><span>    external_link <span class="op">=</span> <span class="st">"http://www.example.com/"</span>,</span></span>
+<span class="r-in"><span>    internal_link <span class="op">=</span> <span class="cn">FALSE</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">generate_markdown_for_member</span><span class="op">(</span><span class="va">example_staff_member</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;div class='col' onclick="location.href='http://www.example.com/';" style='cursor: pointer;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;div class='personimg'&gt; ![](images/staff/example-id.png){fig-alt='Example Name'} &lt;/div&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ### Example Name</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Example description for example staff member.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/div&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span></span></span>
+</code></pre></div>
+    </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
 
