@@ -12,7 +12,7 @@ condensr website."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/aja
     
     <a class="navbar-brand me-2" href="../index.html">condensr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,13 +59,20 @@ condensr website.</p>
 
 </dl></div>
     <div class="section level2">
+    <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
+    
+
+<p>No return value, called to create the skeleton structure of the website.</p>
+    </div>
+    <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     <p>Under the hood, this function is creating a distill website (using
 <code>distill:::do_create_website</code>), and then overwriting some files with
-<code>condensr</code> specifics. These specific files are:</p><ul><li><p>_site.yml</p></li>
-<li><p>index.Rmd
-staff_list.Rmd
-staff_member.Rmd</p></li>
+<code>condensr</code> specifics. These specific files are:</p><ul><li><p>_site.yml - for site specific configurations</p></li>
+<li><p>index.qmd - the home page of the website</p></li>
+<li><p>staff_list.R - an example setup the <code>condensr</code> staff, project and publication lists</p></li>
+<li><p>staff/index.qmd - the template page that will list staff members</p></li>
+<li><p>staff/joe-bloggs/index.qmd - an example page for the hypothetical staff member</p></li>
 </ul></div>
 
     <div class="section level2">
