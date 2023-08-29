@@ -33,6 +33,8 @@ An object of class \code{staff_member} with the following elements:
 \item \code{name}
 \item \code{description}
 \item \code{external_link}
+\item \code{internal_link}
+\item \code{email}
 }
 }
 \description{
@@ -45,5 +47,11 @@ all staff members (by default in \code{staff_list.Rmd}), the \code{name} and
 The external link will be the link in the "MORE" button on the rendered website.
 }
 \examples{
-# ADD_EXAMPLES_HERE
+example_staff_member <- staff_member(
+     id = "example-id",
+     name = "Example Name",
+     description = "Example description for example staff member.",
+     external_link = "http://www.example.com/",
+     internal_link = FALSE
+ )
 }
