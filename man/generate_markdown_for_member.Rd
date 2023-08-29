@@ -11,6 +11,10 @@ generate_markdown_for_member(member, extension = "png")
 
 \item{extension}{Extension of the image file. Don't include the .}
 }
+\value{
+No return value, function will output text directly into markdown
+document using \code{cat}.
+}
 \description{
 Generates the image, short description and linking-out buttons for use in
 a list of staff belonging to a group.

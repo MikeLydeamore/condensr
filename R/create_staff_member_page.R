@@ -8,7 +8,7 @@
 #' @param staff_folder Subfolder in which the staff qmd files are stored.
 #' Default "staff". Note that each template will be `index.qmd` to facilitate
 #' pretty link formatting in-browser.
-#' @return NULL
+#' @return No return value, called to create a qmd file for the staff member.
 #' 
 #' @examples
 #' example_staff_member <- staff_member(

@@ -4,7 +4,8 @@
 #'
 #' @param publication A `condensr` publication object. If a link is available (i.e.
 #' `!is.na(publication$link)`), then a hyperlink will be inserted.
-#' @return NULL
+#' @return No return value, function will output text directly into markdown
+#' document using `cat`.
 #' 
 #' @examples
 #' example_publication <- publication(

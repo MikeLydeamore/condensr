@@ -10,6 +10,10 @@ generate_markdown_for_publications(publication)
 \item{publication}{A \code{condensr} publication object. If a link is available (i.e.
 \code{!is.na(publication$link)}), then a hyperlink will be inserted.}
 }
+\value{
+No return value, function will output text directly into markdown
+document using \code{cat}.
+}
 \description{
 Generate markdown block for \code{codensr} publications.
 }

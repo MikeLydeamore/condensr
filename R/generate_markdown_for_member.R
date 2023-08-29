@@ -5,7 +5,8 @@
 #'
 #' @param member An object of class `staff_member`.
 #' @param extension Extension of the image file. Don't include the .
-#' @return NULL
+#' @return No return value, function will output text directly into markdown
+#' document using `cat`.
 #' 
 #' @examples
 #' example_staff_member <- staff_member(

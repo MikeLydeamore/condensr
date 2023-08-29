@@ -11,6 +11,9 @@ create_website(dir, title)
 
 \item{title}{Title of the website.}
 }
+\value{
+No return value, called to create the skeleton structure of the website.
+}
 \description{
 Creates the necessary directories, high level files and structures for a
 condensr website.
@@ -20,10 +23,11 @@ Under the hood, this function is creating a distill website (using
 \code{distill:::do_create_website}), and then overwriting some files with
 \code{condensr} specifics. These specific files are:
 \itemize{
-\item _site.yml
-\item index.Rmd
-staff_list.Rmd
-staff_member.Rmd
+\item _site.yml - for site specific configurations
+\item index.qmd - the home page of the website
+\item staff_list.R - an example setup the \code{condensr} staff, project and publication lists
+\item staff/index.qmd - the template page that will list staff members
+\item staff/joe-bloggs/index.qmd - an example page for the hypothetical staff member
 }
 }
 \examples{

@@ -7,14 +7,15 @@
 #' `distill:::do_create_website`), and then overwriting some files with
 #' `condensr` specifics. These specific files are:
 #'
-#' * _site.yml
-#' * index.Rmd
-#' staff_list.Rmd
-#' staff_member.Rmd
+#' * _site.yml - for site specific configurations
+#' * index.qmd - the home page of the website
+#' * staff_list.R - an example setup the `condensr` staff, project and publication lists
+#' * staff/index.qmd - the template page that will list staff members
+#' * staff/joe-bloggs/index.qmd - an example page for the hypothetical staff member
 #'
 #' @param dir Target directory for the website.
 #' @param title Title of the website.
-#' @return NULL
+#' @return No return value, called to create the skeleton structure of the website.
 #'
 #' @examples
 #' create_website(dir = tempdir(), "test_site")

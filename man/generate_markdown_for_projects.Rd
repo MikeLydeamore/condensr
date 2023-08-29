@@ -10,6 +10,10 @@ generate_markdown_for_projects(project)
 \item{project}{A \code{condensr} project object. If a link is available (i.e.
 \code{!is.na(project$link)}), then a hyperlink will be inserted.}
 }
+\value{
+No return value, function will output text directly into markdown
+document using \code{cat}.
+}
 \description{
 Generate markdown block for \code{codensr} projects.
 }

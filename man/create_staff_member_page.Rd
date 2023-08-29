@@ -16,6 +16,9 @@ generate the template.}
 Default "staff". Note that each template will be \code{index.qmd} to facilitate
 pretty link formatting in-browser.}
 }
+\value{
+No return value, called to create a qmd file for the staff member.
+}
 \description{
 Creates a quarto file for a given input staff member.
 }
