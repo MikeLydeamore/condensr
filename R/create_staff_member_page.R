@@ -18,7 +18,7 @@
 #'     external_link = "http://www.example.com/",
 #'     internal_link = FALSE
 #' )
-#' create_staff_member_page(example_staff_member, temp_dir())
+#' create_staff_member_page(example_staff_member, tempdir())
 #'
 #' @export
 create_staff_member_page <- function(staff_member, site_dir, staff_folder = "staff") {

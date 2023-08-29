@@ -27,6 +27,6 @@ example_staff_member <- staff_member(
     external_link = "http://www.example.com/",
     internal_link = FALSE
 )
-create_staff_member_page(example_staff_member, temp_dir())
+create_staff_member_page(example_staff_member, tempdir())
 
 }

@@ -47,8 +47,15 @@ expected by `condensr` are built.
 To build the website, simply run:
 
 ``` r
-rmarkdown::render_site("site_dir")
+quarto::render("site_dir")
 ```
 
 You can host the page just like you would any other `quarto` site:
 GitHub Pages, Netlify, or any other HTML hosting site of your choosing.
+
+## Websites using this package
+
+- [SPECTRUM](https://www.spectrum.edu.au)
+- [SPARK](https://www.spark.edu.au)
+
+If you are using `condensr` please tell me - I’d love to hear about it.
