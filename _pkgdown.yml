@@ -2,3 +2,7 @@ url: http://www.michaellydeamore.com/condensr/
 template:
   bootstrap: 5
 
+news:
+  releases:
+  - text: "condensr 1.0.0"
+    href: https://www.michaellydeamore.com/blog/condensr-academic-website-generator/

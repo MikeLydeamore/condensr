@@ -34,7 +34,7 @@
     
     <a class="navbar-brand me-2" href="index.html">condensr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +45,15 @@
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
   <a class="nav-link" href="reference/index.html">Reference</a>
+</li>
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-news">News</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-news">
+    <h6 class="dropdown-header" data-toc-skip>Releases</h6>
+    <a class="external-link dropdown-item" href="https://www.michaellydeamore.com/blog/condensr-academic-website-generator/">condensr 1.0.0</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="news/index.html">Changelog</a>
+  </div>
 </li>
       </ul>
 <form class="form-inline my-2 my-lg-0" role="search">
@@ -78,7 +87,7 @@
 </h2>
 <p>To get started with <code>condensr</code>, simply run:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://www.michaellydeamore.com/condensr/">condensr</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">condensr</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/create_website.html">create_website</a></span><span class="op">(</span>dir <span class="op">=</span> <span class="st">"site_dir"</span>, name <span class="op">=</span> <span class="st">"site_name"</span><span class="op">)</span></span></code></pre></div>
 <p>and a new website will be generated with the files you need.</p>
 <p>The <code>about.qmd</code> page includes the high level information. Most of the group information belongs in <code>index.Rmd</code> where the three structures expected by <code>condensr</code> are built.</p>
@@ -97,7 +106,14 @@
 <p>If you are using <code>condensr</code> please tell me - I’d love to hear about it.</p>
 </div>
 </div>
-  </main><aside class="col-md-3"><div class="license">
+  </main><aside class="col-md-3"><div class="links">
+<h2 data-toc-skip>Links</h2>
+<ul class="list-unstyled">
+<li><a href="https://cloud.r-project.org/package=condensr" class="external-link">View on CRAN</a></li>
+</ul>
+</div>
+
+<div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>

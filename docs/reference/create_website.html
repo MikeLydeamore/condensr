@@ -12,7 +12,7 @@ condensr website."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/aja
     
     <a class="navbar-brand me-2" href="../index.html">condensr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +22,15 @@ condensr website."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/aja
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="active nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
+</li>
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-news">News</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-news">
+    <h6 class="dropdown-header" data-toc-skip>Releases</h6>
+    <a class="external-link dropdown-item" href="https://www.michaellydeamore.com/blog/condensr-academic-website-generator/">condensr 1.0.0</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../news/index.html">Changelog</a>
+  </div>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
@@ -78,13 +87,12 @@ condensr website.</p>
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">create_website</span><span class="op">(</span>dir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/tempfile.html" class="external-link">tempdir</a></span><span class="op">(</span><span class="op">)</span>, <span class="st">"test_site"</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>'/var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//Rtmp4fG42J' already exists</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>'/var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//Rtmp4fG42J/staff' already exists</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//Rtmp4fG42J/_quarto.yml</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//Rtmp4fG42J/staff_list.R</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//Rtmp4fG42J/index.qmd</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//Rtmp4fG42J/people/index.qmd</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//Rtmp4fG42J/staff/joe-bloggs/index.qmd</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>'/var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//RtmpmtuMP2' already exists</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//RtmpmtuMP2/project/_quarto.yml</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>incomplete final line found on '/Users/mlyd0001/Library/Caches/org.R-project.R/R/renv/library/condensr-42cf85f5/R-4.3/aarch64-apple-darwin20/condensr/quarto/templates/project/_quarto.yml'</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//RtmpmtuMP2/project/index.qmd</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//RtmpmtuMP2/project/people.qmd</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//RtmpmtuMP2/project/joe-bloggs.qmd</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

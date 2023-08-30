@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">condensr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +20,15 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="active nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
+</li>
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-news">News</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-news">
+    <h6 class="dropdown-header" data-toc-skip>Releases</h6>
+    <a class="external-link dropdown-item" href="https://www.michaellydeamore.com/blog/condensr-academic-website-generator/">condensr 1.0.0</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../news/index.html">Changelog</a>
+  </div>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
@@ -79,7 +88,8 @@ pretty link formatting in-browser.</p></dd>
 <span class="r-in"><span>    internal_link <span class="op">=</span> <span class="cn">FALSE</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">create_staff_member_page</span><span class="op">(</span><span class="va">example_staff_member</span>, <span class="fu"><a href="https://rdrr.io/r/base/tempfile.html" class="external-link">tempdir</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//Rtmp4fG42J/staff/example-id/index.qmd</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Creating /var/folders/bl/50qwpc0n15517355znb7_srnfcm2zk/T//RtmpmtuMP2/project/staff_example-id.Rmd</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>file("") only supports open = "w+" and open = "w+b": using the former</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
