@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![](https://www.r-pkg.org/badges/version/condensr?color=green)](https://cran.r-project.org/package=condensr)
 [![R-CMD-check](https://github.com/MikeLydeamore/condensr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MikeLydeamore/condensr/actions/workflows/R-CMD-check.yaml)
 [![codecov](https://codecov.io/gh/MikeLydeamore/condensr/branch/master/graph/badge.svg?token=A94AISR7LE)](https://app.codecov.io/gh/MikeLydeamore/condensr)
 <!-- badges: end -->
@@ -20,6 +21,13 @@ automatically. Staff are linked to projects, and to publications, and
 websites for each are generated automatically.
 
 ## Installation
+
+Install the release version from
+[CRAN](https://cran.r-project.org/package=condensr):
+
+``` r
+install.packages("condensr")
+```
 
 You can install the development version of condensr from
 [GitHub](https://github.com/) with:
