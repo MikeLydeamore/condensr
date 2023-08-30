@@ -1,6 +1,6 @@
 Package: condensr
 Title: Academic Group Website Generator
-Version: 1.0.0
+Version: 1.0.0.9000
 Authors@R: 
     person("Michael", "Lydeamore", , "michael.lydeamore@monash.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-6515-827X"))
